@@ -1,15 +1,19 @@
 <template>
   
-  <MainCount msg="Welcome to Your Vue.js App"/>
+  <MainCount />
+  <Counter />
+
 </template>
 
 <script>
 import MainCount from './components/MainCount.vue'
+import Counter from './components/Counter.vue'
 
 export default {
   name: 'App',
   components: {
-    MainCount
+    MainCount,
+    Counter
   }
 }
 </script>
