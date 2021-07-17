@@ -4,8 +4,15 @@
 
 @tailwind utilities;
 
-
-
+html {
+  scroll-behavior: smooth;
+}
+.main-container {
+  margin: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
 .btn {
     @apply font-bold py-2 px-4 rounded;
   }
@@ -15,3 +22,8 @@
   .btn-blue:hover {
     @apply bg-green-700;
   }
+
+.background-marijuana{
+  background-image: url("background.svg");
+  background-size: cover;
+}

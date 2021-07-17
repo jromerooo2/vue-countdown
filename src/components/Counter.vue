@@ -1,64 +1,58 @@
 <template>
-    <div id="counter">
-        <div class="full-height">
-            <div class="flex justify-center	space-x-6">
-                        <h1 class="font-bold text-left text-3xl">Hour</h1>
-                        <h1 class="font-bold text-left text-3xl">Minutes</h1>
-                        <h1 class="font-bold text-center text-3xl">Seconds</h1>
-
-            </div>
-             <div class="flex  justify-center space-x-24 ">
-                        <h1 class="font-bold text-left text-3xl" >{{hour}}</h1>
-                        <h1 class="font-bold text-left text-3xl" >{{minutes}}</h1>
-                        <h1 class="font-bold text-center text-3xl" >{{seconds}}</h1>
-                
-
-            </div>
-        </div>
-
-
-
+  <div id="counter">
+    <div class="main-container">
+      <div class="flex justify-center	space-x-6">
+        <h1 class="font-bold text-left text-3xl">Hour</h1>
+        <h1 class="font-bold text-left text-3xl">Minutes</h1>
+        <h1 class="font-bold text-center text-3xl">Seconds</h1>
+      </div>
+      <div class="flex  justify-center space-x-24 ">
+        <h1 class="font-bold text-left text-3xl">{{ hour }}</h1>
+        <h1 class="font-bold text-left text-3xl">{{ minutes }}</h1>
+        <h1 class="font-bold text-center text-3xl">{{ seconds }}</h1>
+      </div>
+      <div class=" flex flex-wrap flex-col content-center mt-12 z-20">
+        <button
+          v-on:click="setCounterInterval()"
+          class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+        >
+          Start Counter
+        </button>
+      </div>
+    
     </div>
+
+  </div>
 </template>
 
 <script>
-  export default {
-    name: 'Counter',
-    props:['clicked'],
-  data(){
-    return{
-    hour: 0,
-    seconds : 0,
-    minutes: 0
-    }
-  },  
-  methods:{
-
-setCounterInterval(){
-               setInterval(() => {
-         if (this.minutes >= 60) {
-             this.minutes = 0;
-             this.hour++;
-         }
-         if (this.seconds >= 60) {
-             this.seconds = 0;
-             this.minutes++;
-         }
-         else{
-             this.seconds++;
-            //alert(this.seconds)
-         }
-
-            
-        }, 1000)
-      }
+export default {
+  name: "Counter",
+  data() {
+    return {
+      hour: 0,
+      seconds: 0,
+      minutes: 0,
+      defaultHour:new Date().getHours(),
+      defaultMinute:new Date().getMinutes()
+    };
   },
-
-}
+  methods: {
+    setCounterInterval() {
+      setInterval(() => {
+        if (this.minutes >= 60) {
+          this.minutes = 0;
+          this.hour++;
+        }
+        if (this.seconds >= 60) {
+          this.seconds = 0;
+          this.minutes++;
+        } else {
+          this.seconds++;
+        }
+      }, 1000);
+    },
+  },
+};
 </script>
-<style>
- .full-height{
-   height: 100vh;
- } 
 
-</style>

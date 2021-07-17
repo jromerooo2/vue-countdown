@@ -11,9 +11,13 @@
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
+    "moment": "^2.29.1",
     "postcss": "^7.0.36",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue2-timepicker": "^1.1.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
