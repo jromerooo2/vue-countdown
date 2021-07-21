@@ -1,5 +1,5 @@
 <template>
-  <div id="counter">
+  <div id="counter" >
     <div class="main-container">
       <div class="flex justify-center	space-x-6">
         <h1 class="font-bold text-left text-3xl">Hour</h1>

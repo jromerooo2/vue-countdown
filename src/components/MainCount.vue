@@ -19,7 +19,7 @@
                     </a>
 
                 </div>
-                      <div style = "position:relative; left:110px; top:250px; color:#fff">
+                      <div class="break-all" style="position:relative; left:50%; color:#fff;transform: translateX(-50%);">
          Coded with ❤️ and a lot of ☕ By <a class="text-blue-200" href="https://github.com/jromerooo2">Juan Romero</a>
       </div>
 

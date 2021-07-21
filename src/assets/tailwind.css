@@ -4,9 +4,6 @@
 
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
 .main-container {
   margin: 0;
   display: grid;
@@ -25,5 +22,10 @@ html {
 
 .background-marijuana{
   background-image: url("background.svg");
+  background-size: cover;
+}
+
+.background-marijuanav2{
+  background-image: url("svg-bg-2.svg");
   background-size: cover;
 }
