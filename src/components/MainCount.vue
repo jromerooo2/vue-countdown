@@ -3,16 +3,27 @@
 
     <div class="main-container"> 
      
-                <h1 class="text-center font-bold text-4xl sm:text-5xl z-20 text-white">Simple & Fun!</h1>
+                <h1 class="text-center font-bold text-4xl sm:text-5xl z-20 text-white 		"><span class="text-purple-300 tracking-widest"> Simplest</span> &  <span class="text-yellow-400 tracking-widest">Funniest</span></h1> <h1 class="text-center font-bold text-4xl sm:text-5xl z-20 text-white mt-2">Website Ever!</h1>
 
                 <div class=" flex flex-wrap flex-col content-center mt-12 z-20">
-                    <button @click="sendCounter()" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                      Go To Counter
-                    </button>
-                    <p class="text-center text-white mt-5">Coded with ❤️ and a lot of ☕ By <a class="text-blue-200" href="https://github.com/jromerooo2">Juan Romero</a></p>
+                    <a href="#counter" v-smooth-scroll  class="text-center hover:bg-yellow-500 text-white font-bold py-2 px-4 border-b-4 border-black hover:border-yellow-500 rounded-full w-64">
+                        Go To Counter
+                       <svg xmlns="http://www.w3.org/2000/svg" 
+                      style="display:block;margin:auto; margin-top:4px"
+                       class="icon icon-tabler icon-tabler-arrow-down" width="34" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="18" y1="13" x2="12" y2="19" />
+                        <line x1="6" y1="13" x2="12" y2="19" />
+                      </svg>
+                    </a>
+
                 </div>
+                      <div style = "position:relative; left:110px; top:250px; color:#fff">
+         Coded with ❤️ and a lot of ☕ By <a class="text-blue-200" href="https://github.com/jromerooo2">Juan Romero</a>
+      </div>
 
-
+        
       </div>
 
     
@@ -28,23 +39,7 @@
     }
   }, 
   methods: {
-    
-    sendCounter(){
-      
-        this.clickedCounter++;
-        let mod = this.clickedCounter % 2;
-        
-        if (mod === 0) {
-          window.location.hash = "";
-          window.location.hash = "counter";
-        }
-        else
-        {
-          window.location.hash = "counter";
-        }
-              
 
-    }
   }
 }
 </script>

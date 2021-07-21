@@ -33,12 +33,8 @@ export default {
     created(){
             setInterval(()=>{
                 this.defaultHour = new Date().getHours()
-                if (this.defaultMinute < 10) {
                     // alert('is less than 10')
-                    this.defaultMinute = "0"+ this.defaultMinute;
-                }else{
                     this.defaultMinute = new Date().getMinutes()
-                }
                 
                 this.defaultSecond = new Date().getSeconds()
             },1000);
