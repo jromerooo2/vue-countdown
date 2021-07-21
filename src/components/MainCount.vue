@@ -9,7 +9,9 @@
                     <button @click="sendCounter()" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                       Go To Counter
                     </button>
+                    <p class="text-center text-white mt-5">Coded with ❤️ and a lot of ☕ By <a class="text-blue-200" href="https://github.com/jromerooo2">Juan Romero</a></p>
                 </div>
+
 
       </div>
 
