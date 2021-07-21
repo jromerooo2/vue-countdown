@@ -1,5 +1,5 @@
 <template>
-    <div class="main-container">
+    <div class="main-container ">
             <h1 class="text-center font-bold text-3xl">
                 {{defaultHour}} : {{defaultMinute}}: {{defaultSecond}}
              </h1><br>
