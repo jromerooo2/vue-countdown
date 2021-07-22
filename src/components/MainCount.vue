@@ -19,7 +19,7 @@
                     </a>
 
                 </div>
-                      <p class="text-center text-white">Coded with ❤️ and a lot of ☕ By <a class="text-blue-200" href="https://github.com/jromerooo2">Juan Romero</a></p> 
+                      <p class="text-center text-white mt-36">Coded with ❤️ &  ☕ By <a class="text-blue-200" href="https://github.com/jromerooo2">Juan Romero</a></p> 
 
         
       </div>
